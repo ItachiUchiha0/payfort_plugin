@@ -156,6 +156,20 @@
             </list>
           </value>
         </entry>
+        <entry key="http">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/../../../tools/flutter/.pub-cache/hosted/pub.dartlang.org/http-0.12.2/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="http_parser">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/../../../tools/flutter/.pub-cache/hosted/pub.dartlang.org/http_parser-3.1.4/lib" />
+            </list>
+          </value>
+        </entry>
         <entry key="integration_test">
           <value>
             <list>
@@ -415,6 +429,8 @@
       <root url="file://$PROJECT_DIR$/../../../tools/flutter/.pub-cache/hosted/pub.dartlang.org/fake_async-1.2.0-nullsafety.3/lib" />
       <root url="file://$PROJECT_DIR$/../../../tools/flutter/.pub-cache/hosted/pub.dartlang.org/file-6.0.0-nullsafety.4/lib" />
       <root url="file://$PROJECT_DIR$/../../../tools/flutter/.pub-cache/hosted/pub.dartlang.org/glob-1.2.0/lib" />
+      <root url="file://$PROJECT_DIR$/../../../tools/flutter/.pub-cache/hosted/pub.dartlang.org/http-0.12.2/lib" />
+      <root url="file://$PROJECT_DIR$/../../../tools/flutter/.pub-cache/hosted/pub.dartlang.org/http_parser-3.1.4/lib" />
       <root url="file://$PROJECT_DIR$/../../../tools/flutter/.pub-cache/hosted/pub.dartlang.org/io-0.3.4/lib" />
       <root url="file://$PROJECT_DIR$/../../../tools/flutter/.pub-cache/hosted/pub.dartlang.org/js-0.6.3-nullsafety.3/lib" />
       <root url="file://$PROJECT_DIR$/../../../tools/flutter/.pub-cache/hosted/pub.dartlang.org/json_rpc_2-2.2.2/lib" />

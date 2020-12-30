@@ -3,7 +3,7 @@ import 'dart:async';
 
 import 'package:flutter/services.dart';
 import 'package:payfort_plugin/payfort_plugin.dart';
-
+import 'package:payfort_plugin_example/payment_repo.dart';
 void main() {
   runApp(MyApp());
 }
@@ -14,7 +14,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  String _platformVersion = 'Unknown';
+  String _userID = '';
 
   @override
   void initState() {
@@ -24,12 +24,14 @@ class _MyAppState extends State<MyApp> {
 
   // Platform messages are asynchronous, so we initialize in an async method.
   Future<void> initPlatformState() async {
-    String platformVersion;
+    String userID;
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {
-      platformVersion = await PayfortPlugin.payfort;
+      userID = await PayfortPlugin.getID;
+      debugPrint('user id is $userID');
     } on PlatformException {
-      platformVersion = 'Failed to get platform version.';
+      userID = 'Failed to get user ID.';
+      debugPrint('Failed to get user ID.');
     }
 
     // If the widget was removed from the tree while the asynchronous platform
@@ -38,7 +40,7 @@ class _MyAppState extends State<MyApp> {
     if (!mounted) return;
 
     setState(() {
-      _platformVersion = platformVersion;
+      _userID = userID;
     });
   }
 
@@ -50,7 +52,24 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Plugin example app'),
         ),
         body: Center(
-          child: Text('Running on: $_platformVersion\n'),
+          child: RaisedButton(
+            child: Text('pay'),
+            onPressed: () {
+              PayfortPlugin.getID.then((value) => {
+              debugPrint('user id is $value'),
+                  getAuthKey(_userID, 4).then((value) => {
+                          PayfortPlugin.performPaymentRequest(
+                              value.transactionRef,
+                              value.authKey,
+                              'ahmed',
+                              "en",
+                              "user@mail.com",
+                              "1",
+                              "PURCHASE")
+                        })
+                  });
+            },
+          ),
         ),
       ),
     );

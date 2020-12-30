@@ -34,6 +34,7 @@ class MainActivity: FlutterActivity() {
             var command = call.argument<String>("command")
             var amount = call.argument<String>("amount")
             var email = call.argument<String>("email")
+            //var currency = call.argument<String>("currency")!!
             if (call.method == "initPayFort") {
                 Log.e("native sdk token", token!!)
                 Log.e("native merchant", merchantRef!!)
@@ -75,8 +76,12 @@ class MainActivity: FlutterActivity() {
 
 
             } else if (call.method == "getID") {
-                result.success(FortSdk.getDeviceId(this@MainActivity))
+                Log.e("execute getID", "executing")
+
+                result.success(FortSdk.getDeviceId(this))
             } else {
+                Log.e("execute getID", "error")
+
                 result.notImplemented()
             }
         }
