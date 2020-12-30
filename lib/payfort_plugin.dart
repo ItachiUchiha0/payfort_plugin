@@ -17,9 +17,9 @@ class PayfortPlugin {
   ///
   /// this method is for calling payfort sdk in both android and ios to perform payment process with
   /// specified parameters.
-  static Future<String> performPaymentRequest(String merchantRef,String sdkToken,
+  static Future<Map> performPaymentRequest(String merchantRef,String sdkToken,
       String name,String language,String email,String amount,String command) async {
-     await _channel.invokeMethod('initPayFort',{
+     Map result = await _channel.invokeMethod('initPayFort',{
       'sdkToken':sdkToken,
       'merchantRef':merchantRef,
       'amount':amount,
@@ -28,5 +28,5 @@ class PayfortPlugin {
       'command':command,
       'name':name,
     });
-
+return result;
 }}

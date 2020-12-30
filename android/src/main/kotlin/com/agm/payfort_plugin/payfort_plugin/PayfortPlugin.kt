@@ -1,6 +1,9 @@
 package com.agm.payfort_plugin.payfort_plugin
 
+import android.util.Log
 import androidx.annotation.NonNull
+import com.payfort.fort.android.sdk.base.callbacks.FortCallBackManager
+import com.payfort.fort.android.sdk.base.callbacks.FortCallback
 
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.plugin.common.MethodCall
@@ -8,6 +11,7 @@ import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler
 import io.flutter.plugin.common.MethodChannel.Result
 import io.flutter.plugin.common.PluginRegistry.Registrar
+import java.util.HashMap
 
 /** PayfortPlugin */
 class PayfortPlugin: FlutterPlugin, MethodCallHandler {
@@ -23,9 +27,9 @@ class PayfortPlugin: FlutterPlugin, MethodCallHandler {
   }
 
   override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {
-    if (call.method == "getPlatformVersion") {
-      result.success("Android ${android.os.Build.VERSION.RELEASE}")
-    } else {
+    if (call.method == "getID") {
+
+    }else{
       result.notImplemented()
     }
   }
