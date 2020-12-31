@@ -1,9 +1,12 @@
 name: payfort_plugin
-description: A new flutter plugin project.
-version: 0.0.1
-author:
-homepage:
+description: >-
+  A flutter plugin to help flutter developer to integrate with
+  payfort SDK easily, it supports android and ios.
 
+version: 0.0.1
+authors:
+  -Magints
+repository: https://github.com/ItachiUchiha0/payfort_plugin
 environment:
   sdk: ">=2.7.0 <3.0.0"
   flutter: ">=1.20.0"

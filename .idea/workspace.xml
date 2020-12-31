@@ -19,20 +19,23 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a26f864-6ad2-4697-b347-82ce870eb0ed" name="Default Changelist" comment="adding android">
+    <list default="true" id="3a26f864-6ad2-4697-b347-82ce870eb0ed" name="Default Changelist" comment="adding android and ios">
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/payfort_plugin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/payfort_plugin.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/agm/payfort_plugin/payfort_plugin/PayfortPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/agm/payfort_plugin/payfort_plugin/PayfortPlugin.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Info-Debug.plist" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner/Info-Debug.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Info-Release.plist" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner/Info-Release.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/lib/auth_key_response.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/lib/payment_repo.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/payfort_plugin.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/payfort_plugin.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/.dart_tool/package_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/.idea/payfort_plugin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/.idea/payfort_plugin.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/.packages" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +56,7 @@
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RunManager">
@@ -79,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609283749322</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="adding android and ios">
+      <created>1609370416478</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1609370416478</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -96,7 +107,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adding android" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding android" />
+    <MESSAGE value="adding android and ios" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding android and ios" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1878" height="259" key="GridCell.Tab.0.bottom" timestamp="1609345178206">
@@ -119,10 +131,15 @@
     </state>
     <state width="1878" height="259" key="GridCell.Tab.0.right/0.25.1920.970@0.25.1920.970" timestamp="1609344513215" />
     <state width="1878" height="259" key="GridCell.Tab.0.right/0.25.1920.971@0.25.1920.971" timestamp="1609345178205" />
-    <state x="560" y="247" key="Vcs.Push.Dialog.v2" timestamp="1609283755682">
-      <screen x="0" y="25" width="1920" height="970" />
+    <state x="461" y="146" key="SettingsEditor" timestamp="1609416005282">
+      <screen x="0" y="25" width="1920" height="971" />
+    </state>
+    <state x="461" y="146" key="SettingsEditor/0.25.1920.971@0.25.1920.971" timestamp="1609416005282" />
+    <state x="560" y="248" key="Vcs.Push.Dialog.v2" timestamp="1609370422995">
+      <screen x="0" y="25" width="1920" height="973" />
     </state>
     <state x="560" y="247" key="Vcs.Push.Dialog.v2/0.25.1920.970@0.25.1920.970" timestamp="1609283755682" />
+    <state x="560" y="248" key="Vcs.Push.Dialog.v2/0.25.1920.973@0.25.1920.973" timestamp="1609370422995" />
     <state x="100" y="125" width="1720" height="770" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1609344921564">
       <screen x="0" y="25" width="1920" height="970" />
     </state>

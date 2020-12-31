@@ -3,6 +3,7 @@ import 'dart:async';
 
 import 'package:flutter/services.dart';
 import 'package:payfort_plugin/payfort_plugin.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -55,19 +56,21 @@ class _MyAppState extends State<MyApp> {
           child: RaisedButton(
             child: Text('pay'),
             onPressed: () {
-              PayfortPlugin.getID.then((value) => { //use this call to get device id and send it to server
-              debugPrint('user id is $value'),
-                         PayfortPlugin.performPaymentRequest(
-                              'YOR_MERCHANT_REF',
-                              'YOUR_SDK_TOKEN',
-                              'ahmed',
-                              'en',
-                              'user@mail.com',
-                              '1',
-                              'PURCHASE').then((value) => {
-                                debugPrint('card number is ${value['card_number']}')
-                         })
-
+              PayfortPlugin.getID.then((value) => {
+                    //use this call to get device id and send it to server
+                    debugPrint('user id is $value'),
+                    PayfortPlugin.performPaymentRequest(
+                            'YOR_MERCHANT_REF',
+                            'YOUR_SDK_TOKEN',
+                            'ahmed',
+                            'en',
+                            'user@mail.com',
+                            '1',
+                            'PURCHASE')
+                        .then((value) => {
+                              debugPrint(
+                                  'card number is ${value['card_number']}')
+                            })
                   });
             },
           ),

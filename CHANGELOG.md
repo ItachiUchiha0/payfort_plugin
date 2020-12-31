@@ -1,3 +1,8 @@
+## 0.0.2
+
+* More Documented code
+* Updating README file
+
 ## 0.0.1
 
-* TODO: Describe initial release.
+* First Release
