@@ -4,7 +4,7 @@ import 'package:flutter/services.dart';
 
 class PayfortPlugin {
   static const MethodChannel _channel =
-      const MethodChannel('agm.flutter.apps/e-commerce');
+      const MethodChannel('payfort_plugin');
 
   ///
   /// this method is for getting user device id to help in generating SDK token

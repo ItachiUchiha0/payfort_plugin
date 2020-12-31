@@ -19,21 +19,31 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a26f864-6ad2-4697-b347-82ce870eb0ed" name="Default Changelist" comment="- Document code">
-      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
+    <list default="true" id="3a26f864-6ad2-4697-b347-82ce870eb0ed" name="Default Changelist" comment="- formatting code">
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config_subset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/version" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/payfort_plugin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/payfort_plugin.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/.dart_tool/package_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/agm/payfort_plugin/payfort_plugin/PayfortPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/agm/payfort_plugin/payfort_plugin/PayfortPlugin.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/kotlin/com/agm/payfort_plugin/payfort_plugin_example/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/kotlin/com/agm/payfort_plugin/payfort_plugin_example/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/.dart_tool/package_config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/.dart_tool/package_config_subset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/.dart_tool/version" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/.idea/payfort_plugin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/.idea/payfort_plugin.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/.packages" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/example/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/android/src/main/kotlin/com/agm/payfort_plugin/payfort_plugin/PayfortPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/android/src/main/kotlin/com/agm/payfort_plugin/payfort_plugin/PayfortPlugin.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/example/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/example/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/example/android/app/src/main/kotlin/com/agm/payfort_plugin/payfort_plugin_example/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/example/android/app/src/main/kotlin/com/agm/payfort_plugin/payfort_plugin_example/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/example/ios/Runner/AppDelegate.swift" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/example/ios/Runner/AppDelegate.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/ios/Classes/PayfortPlugin.m" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/ios/Classes/PayfortPlugin.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/ios/Classes/SwiftPayfortPlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/ios/Classes/SwiftPayfortPlugin.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/lib/payfort_plugin.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/lib/payfort_plugin.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/payfort_plugin/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/AppDelegate.swift" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner/AppDelegate.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/PayfortPlugin.m" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/PayfortPlugin.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/SwiftPayfortPlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/SwiftPayfortPlugin.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/payfort_plugin.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/payfort_plugin.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,38 +117,39 @@
     <MESSAGE value="adding android" />
     <MESSAGE value="adding android and ios" />
     <MESSAGE value="- Document code" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Document code" />
+    <MESSAGE value="- formatting code" />
+    <option name="LAST_COMMIT_MESSAGE" value="- formatting code" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1878" height="259" key="GridCell.Tab.0.bottom" timestamp="1609345178206">
+    <state width="939" height="259" key="GridCell.Tab.0.bottom" timestamp="1609424405271">
       <screen x="0" y="25" width="1920" height="971" />
     </state>
     <state width="1878" height="259" key="GridCell.Tab.0.bottom/0.25.1920.970@0.25.1920.970" timestamp="1609344513215" />
-    <state width="1878" height="259" key="GridCell.Tab.0.bottom/0.25.1920.971@0.25.1920.971" timestamp="1609345178206" />
-    <state width="1878" height="259" key="GridCell.Tab.0.center" timestamp="1609345178205">
+    <state width="939" height="259" key="GridCell.Tab.0.bottom/0.25.1920.971@0.25.1920.971" timestamp="1609424405271" />
+    <state width="939" height="259" key="GridCell.Tab.0.center" timestamp="1609424405271">
       <screen x="0" y="25" width="1920" height="971" />
     </state>
     <state width="1878" height="259" key="GridCell.Tab.0.center/0.25.1920.970@0.25.1920.970" timestamp="1609344513214" />
-    <state width="1878" height="259" key="GridCell.Tab.0.center/0.25.1920.971@0.25.1920.971" timestamp="1609345178205" />
-    <state width="1878" height="259" key="GridCell.Tab.0.left" timestamp="1609345178205">
+    <state width="939" height="259" key="GridCell.Tab.0.center/0.25.1920.971@0.25.1920.971" timestamp="1609424405271" />
+    <state width="939" height="259" key="GridCell.Tab.0.left" timestamp="1609424405270">
       <screen x="0" y="25" width="1920" height="971" />
     </state>
     <state width="1878" height="259" key="GridCell.Tab.0.left/0.25.1920.970@0.25.1920.970" timestamp="1609344513214" />
-    <state width="1878" height="259" key="GridCell.Tab.0.left/0.25.1920.971@0.25.1920.971" timestamp="1609345178205" />
-    <state width="1878" height="259" key="GridCell.Tab.0.right" timestamp="1609345178205">
+    <state width="939" height="259" key="GridCell.Tab.0.left/0.25.1920.971@0.25.1920.971" timestamp="1609424405270" />
+    <state width="939" height="259" key="GridCell.Tab.0.right" timestamp="1609424405271">
       <screen x="0" y="25" width="1920" height="971" />
     </state>
     <state width="1878" height="259" key="GridCell.Tab.0.right/0.25.1920.970@0.25.1920.970" timestamp="1609344513215" />
-    <state width="1878" height="259" key="GridCell.Tab.0.right/0.25.1920.971@0.25.1920.971" timestamp="1609345178205" />
+    <state width="939" height="259" key="GridCell.Tab.0.right/0.25.1920.971@0.25.1920.971" timestamp="1609424405271" />
     <state x="461" y="146" key="SettingsEditor" timestamp="1609416005282">
       <screen x="0" y="25" width="1920" height="971" />
     </state>
     <state x="461" y="146" key="SettingsEditor/0.25.1920.971@0.25.1920.971" timestamp="1609416005282" />
-    <state x="560" y="248" key="Vcs.Push.Dialog.v2" timestamp="1609416180465">
+    <state x="560" y="248" key="Vcs.Push.Dialog.v2" timestamp="1609418924271">
       <screen x="0" y="25" width="1920" height="971" />
     </state>
     <state x="560" y="247" key="Vcs.Push.Dialog.v2/0.25.1920.970@0.25.1920.970" timestamp="1609283755682" />
-    <state x="560" y="248" key="Vcs.Push.Dialog.v2/0.25.1920.971@0.25.1920.971" timestamp="1609416180465" />
+    <state x="560" y="248" key="Vcs.Push.Dialog.v2/0.25.1920.971@0.25.1920.971" timestamp="1609418924271" />
     <state x="560" y="248" key="Vcs.Push.Dialog.v2/0.25.1920.973@0.25.1920.973" timestamp="1609370422995" />
     <state x="100" y="125" width="1720" height="770" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1609344921564">
       <screen x="0" y="25" width="1920" height="970" />

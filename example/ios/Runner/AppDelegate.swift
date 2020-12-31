@@ -1,6 +1,5 @@
 import UIKit
 import Flutter
-
 @UIApplicationMain
 @objc class AppDelegate: FlutterAppDelegate {
   override func application(
@@ -8,7 +7,7 @@ import Flutter
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
   ) -> Bool {
     let controller : FlutterViewController = window?.rootViewController as! FlutterViewController
-    let payChannel = FlutterMethodChannel(name: "agm.flutter.apps/e-commerce",
+    let payChannel = FlutterMethodChannel(name: "payfort_plugin",
                                           binaryMessenger: controller.binaryMessenger)
     payChannel.setMethodCallHandler({
         (call: FlutterMethodCall, result: @escaping FlutterResult) -> Void in
@@ -59,8 +58,17 @@ import Flutter
             
         }
     })
-    GeneratedPluginRegistrant.register(with: self)
     return super.application(application, didFinishLaunchingWithOptions: launchOptions)
   }
+
+
+ override func applicationDidEnterBackground(_ application: UIApplication) {
+        var bgTask: UIBackgroundTaskIdentifier = .invalid
+        bgTask = application.beginBackgroundTask(expirationHandler: {
+            application.endBackgroundTask(bgTask)
+            bgTask = .invalid
+        })
+    }
+    
     func getId() -> String { UIDevice.current.identifierForVendor?.uuidString ?? UUID().uuidString }
 }

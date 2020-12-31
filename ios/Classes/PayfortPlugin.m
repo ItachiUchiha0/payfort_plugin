@@ -1,4 +1,5 @@
 #import "PayfortPlugin.h"
+
 #if __has_include(<payfort_plugin/payfort_plugin-Swift.h>)
 #import <payfort_plugin/payfort_plugin-Swift.h>
 #else

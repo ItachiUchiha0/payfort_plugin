@@ -27,63 +27,7 @@ class MainActivity: FlutterActivity() {
     override fun configureFlutterEngine(@NonNull flutterEngine: FlutterEngine) {
         super.configureFlutterEngine(flutterEngine)
         MethodChannel(flutterEngine.dartExecutor.binaryMessenger, CHANNEL).setMethodCallHandler { call, result ->
-            var token = call.argument<String>("sdkToken")
-            var merchantRef = call.argument<String>("merchantRef")
-            var name = call.argument<String>("name")
-            var lang = call.argument<String>("lang")
-            var command = call.argument<String>("command")
-            var amount = call.argument<String>("amount")
-            var email = call.argument<String>("email")
-            //var currency = call.argument<String>("currency")!!
-            if (call.method == "initPayFort") {
-                Log.e("native sdk token", token!!)
-                Log.e("native merchant", merchantRef!!)
-                fortCallback = FortCallBackManager.Factory.create() as FortCallback
-                deviceId = FortSdk.getDeviceId(this@MainActivity)
-                Log.d("DeviceId", deviceId)
-                val fortrequest = FortRequest()
-                val requestMap: MutableMap<String, Any> = HashMap()
-                requestMap["command"] = command!!
-                requestMap["customer_email"] = email!!
-                requestMap["currency"] = "EGP"
-                requestMap["amount"] = amount!!
-                requestMap["language"] = lang!!
-                requestMap["merchant_reference"] = merchantRef.toString()
-                requestMap["customer_name"] = name!!
-                requestMap["sdk_token"] = token!!
-                fortrequest.requestMap = requestMap
-                fortrequest.isShowResponsePage = true // to [display/use] the SDK response page
-                try {
-                    FortSdk.getInstance().registerCallback(this@MainActivity, fortrequest, FortSdk.ENVIRONMENT.TEST, 5, fortCallback, true, object : FortInterfaces.OnTnxProcessed {
-                        override fun onCancel(requestParamsMap: Map<String, Any>, responseMap: Map<String, Any>) {
-                            Log.d("Cancelled", responseMap.toString())
-                            result.success(responseMap)
-                        }
-
-                        override fun onSuccess(requestParamsMap: Map<String, Any>, fortResponseMap: Map<String, Any>) {
-                            Log.i("Success", fortResponseMap.toString())
-                            result.success(fortResponseMap)
-                        }
-
-                        override fun onFailure(requestParamsMap: Map<String, Any>, fortResponseMap: Map<String, Any>) {
-                            Log.e("Failure", fortResponseMap.toString())
-                            result.success(fortResponseMap)
-                        }
-                    })
-                } catch (e: Exception) {
-                    Log.e("execute Payment", "all FortSdk", e)
-                }
-
-
-            } else if (call.method == "getID") {
-                Log.e("execute getID", "executing")
-
-                result.success(FortSdk.getDeviceId(this))
-            } else {
-                Log.e("execute getID", "error")
-
-                result.notImplemented()
-            }
+           
         }
     }
 
@@ -94,6 +38,7 @@ class MainActivity: FlutterActivity() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == 5) {
+            fortCallback = FortCallBackManager.Factory.create() as FortCallback
             fortCallback!!.onActivityResult(requestCode, resultCode, data)
         }
     }
