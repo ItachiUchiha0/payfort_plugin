@@ -4,11 +4,12 @@ import android.app.Activity
 import android.content.Context
 import android.util.Log
 import androidx.annotation.NonNull
-import com.payfort.fort.android.sdk.base.FortSdk
-import com.payfort.fort.android.sdk.base.callbacks.FortCallBackManager
-import com.payfort.fort.android.sdk.base.callbacks.FortCallback
-import com.payfort.sdk.android.dependancies.base.FortInterfaces
-import com.payfort.sdk.android.dependancies.models.FortRequest
+import com.payfort.fortpaymentsdk.FortSdk
+import com.payfort.fortpaymentsdk.callbacks.FortCallBackManager
+import com.payfort.fortpaymentsdk.callbacks.FortCallback
+import com.payfort.fortpaymentsdk.callbacks.FortInterfaces
+import com.payfort.fortpaymentsdk.domain.model.FortRequest
+
 
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.embedding.engine.plugins.activity.ActivityAware
@@ -59,7 +60,7 @@ class PayfortPlugin(): FlutterPlugin, MethodCallHandler,ActivityAware {
           Log.e("native sdk token", token!!)
           Log.e("native merchant", merchantRef!!)
           fortCallback = FortCallBackManager.Factory.create() as FortCallback
-          deviceId = FortSdk.getDeviceId(activity)
+          deviceId = FortSdk.getDeviceId(activity)!!
           Log.d("DeviceId", deviceId)
           val fortrequest = FortRequest()
           val requestMap: MutableMap<String, Any> = HashMap()

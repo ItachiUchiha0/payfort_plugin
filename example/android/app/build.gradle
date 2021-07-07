@@ -56,11 +56,21 @@ flutter {
     source '../..'
 }
 
+allprojects {
+    repositories {
+        maven { url 'https://android-sdk.payfort.com' }
+        google()
+        jcenter()
+
+    }
+}
+
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation 'com.android.support:multidex:1.0.2'
-    api project(path: ':FORTSDKv1.8')
-    api 'com.android.support:design:30+'
+    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation ("com.amazon:fortpayment:+:release@aar")
+            { transitive = true }
+    api 'com.google.android.material:material:1.0.0'
     implementation 'androidx.appcompat:appcompat:1.1.0'
     api 'com.victor:lib:1.0.1'
     api 'com.google.code.gson:gson:2.8.0'
