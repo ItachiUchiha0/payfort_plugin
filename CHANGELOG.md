@@ -1,3 +1,11 @@
+## 0.1.7
+
+* Reformatting
+
+## 0.1.7
+
+* fixing ios issue
+
 ## 0.0.4
 
 * fixing android issue

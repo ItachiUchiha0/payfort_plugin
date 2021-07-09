@@ -3,8 +3,7 @@ import 'dart:async';
 import 'package:flutter/services.dart';
 
 class PayfortPlugin {
-  static const MethodChannel _channel =
-      const MethodChannel('payfort_plugin');
+  static const MethodChannel _channel = const MethodChannel('payfort_plugin');
 
   ///
   /// this method is for getting user device id to help in generating SDK token
@@ -23,7 +22,8 @@ class PayfortPlugin {
       String language,
       String email,
       String amount,
-      String command) async {
+      String command,
+      String currency) async {
     Map result = await _channel.invokeMethod('initPayFort', {
       'sdkToken': sdkToken,
       'merchantRef': merchantRef,
@@ -32,6 +32,7 @@ class PayfortPlugin {
       'lang': language,
       'command': command,
       'name': name,
+      "currency": currency
     });
     return result;
   }

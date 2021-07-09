@@ -3,7 +3,7 @@ description: >-
   A flutter plugin to help flutter developer to integrate with
   payfort SDK easily, it supports android and ios.
 
-version: 0.0.4
+version: 0.1.8
 repository: https://github.com/ItachiUchiha0/payfort_plugin
 environment:
   sdk: ">=2.7.0 <3.0.0"

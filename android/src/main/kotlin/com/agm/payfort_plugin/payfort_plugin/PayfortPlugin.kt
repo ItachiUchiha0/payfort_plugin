@@ -56,7 +56,7 @@ class PayfortPlugin(): FlutterPlugin, MethodCallHandler,ActivityAware {
           var command = call.argument<String>("command")
           var amount = call.argument<String>("amount")
           var email = call.argument<String>("email")
-          //var currency = call.argument<String>("currency")!!
+          var currency = call.argument<String>("currency")!!
           Log.e("native sdk token", token!!)
           Log.e("native merchant", merchantRef!!)
           fortCallback = FortCallBackManager.Factory.create() as FortCallback
@@ -66,7 +66,7 @@ class PayfortPlugin(): FlutterPlugin, MethodCallHandler,ActivityAware {
           val requestMap: MutableMap<String, Any> = HashMap()
           requestMap["command"] = command!!
           requestMap["customer_email"] = email!!
-          requestMap["currency"] = "EGP"
+          requestMap["currency"] = currency
           requestMap["amount"] = amount!!
           requestMap["language"] = lang!!
           requestMap["merchant_reference"] = merchantRef.toString()

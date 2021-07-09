@@ -66,7 +66,8 @@ class _MyAppState extends State<MyApp> {
                             'en',
                             'user@mail.com',
                             '1',
-                            'PURCHASE')
+                            'PURCHASE',
+                            'EGP')
                         .then((value) => {
                               debugPrint(
                                   'card number is ${value['card_number']}')
