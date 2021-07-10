@@ -20,7 +20,7 @@ public class SwiftPayfortPlugin: NSObject, FlutterPlugin {
             window = UIWindow.init(frame: frame)
         let controller : UIViewController =
         (UIApplication.shared.delegate?.window??.rootViewController)!;
-        let payFort = PayFortController.init(enviroment: .sandBox)
+        let payFort = PayFortController.init(enviroment: .production)
         guard let args = call.arguments as? Dictionary<String, String> else { return }
         let token = args["sdkToken"]
         let merchantRef = args["merchantRef"]

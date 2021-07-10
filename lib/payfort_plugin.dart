@@ -7,15 +7,15 @@ class PayfortPlugin {
 
   ///
   /// this method is for getting user device id to help in generating SDK token
-  static Future<String> get getID async {
-    final String version = await _channel.invokeMethod('getID');
+  static Future<String?> get getID async {
+    final String? version = await _channel.invokeMethod('getID');
     return version;
   }
 
   ///
   /// this method is for calling payfort sdk in both android and ios to perform payment process with
   /// specified parameters.
-  static Future<Map> performPaymentRequest(
+  static Future<Map?> performPaymentRequest(
       String merchantRef,
       String sdkToken,
       String name,
@@ -24,7 +24,7 @@ class PayfortPlugin {
       String amount,
       String command,
       String currency) async {
-    Map result = await _channel.invokeMethod('initPayFort', {
+    Map? result = await _channel.invokeMethod('initPayFort', {
       'sdkToken': sdkToken,
       'merchantRef': merchantRef,
       'amount': amount,

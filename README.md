@@ -1,6 +1,7 @@
 # payfort_plugin
 
-A flutter plugin to help flutter developer to integrate with payfort SDK easily, it supports android and ios.
+A flutter plugin to help flutter developer to integrate with payfort SDK easily, it supports android and ios from version 12.
+
 
 
 ## Getting Started
@@ -9,22 +10,23 @@ Add this to pubspec.yaml
 
 ```dart
 dependencies:
-  payfort_plugin: ^0.1.8
+  payfort_plugin: ^0.2.0
 ```
 
 ### Usage
 
 ```dart
-PayfortPlugin.getID.then((value) => { //use this call to get device id and send it to server
+PayfortPlugin.getID.then((deviceID) => { //use this deviceID to  send it to your server to get YOR_MERCHANT_REF and YOUR_SDK_TOKEN
                          PayfortPlugin.performPaymentRequest(
                               'YOR_MERCHANT_REF',
                               'YOUR_SDK_TOKEN',
-                              'name',
-                              'language',
+                              'NAME',
+                              'LANGUAGE',
                               'user@mail.com',
-                              'amount',
+                              'AMOUNT',
                               'PURCHASE',
-                              'Currency').then((value) => {
+                              'CURRENCY').then((value) => {
+                                // value object contains payfort response, such card number, transaction reference, ...
                                 debugPrint('card number is ${value['card_number']}')
                          })
 

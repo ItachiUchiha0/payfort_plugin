@@ -75,7 +75,7 @@ class PayfortPlugin(): FlutterPlugin, MethodCallHandler,ActivityAware {
           fortrequest.requestMap = requestMap
           fortrequest.isShowResponsePage = true // to [display/use] the SDK response page
           try {
-            FortSdk.getInstance().registerCallback(activity, fortrequest, FortSdk.ENVIRONMENT.TEST, 5, fortCallback, true, object : FortInterfaces.OnTnxProcessed {
+            FortSdk.getInstance().registerCallback(activity, fortrequest, FortSdk.ENVIRONMENT.PRODUCTION, 5, fortCallback, true, object : FortInterfaces.OnTnxProcessed {
               override fun onCancel(requestParamsMap: Map<String, Any>, responseMap: Map<String, Any>) {
                 Log.d("Cancelled", responseMap.toString())
                 result.success(responseMap)

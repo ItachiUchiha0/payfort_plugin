@@ -1,4 +1,12 @@
-## 0.1.7
+## 0.2.0
+
+* Supporting null safety and enable production payment
+
+## 0.1.9
+
+* fixing issues
+
+## 0.1.8
 
 * Reformatting
 

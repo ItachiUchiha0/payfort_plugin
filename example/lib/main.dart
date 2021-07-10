@@ -1,8 +1,6 @@
-import 'package:flutter/material.dart';
 import 'dart:async';
 
-import 'package:flutter/services.dart';
-import 'package:payfort_plugin/payfort_plugin.dart';
+import 'package:flutter/materialayfort_plugin.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,8 +12,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  String _userID = '';
-  Map result;
+  Map? result;
 
   @override
   void initState() {
@@ -24,26 +21,7 @@ class _MyAppState extends State<MyApp> {
   }
 
   // Platform messages are asynchronous, so we initialize in an async method.
-  Future<void> initPlatformState() async {
-    String userID;
-    // Platform messages may fail, so we use a try/catch PlatformException.
-    try {
-      userID = await PayfortPlugin.getID;
-      debugPrint('user id is $userID');
-    } on PlatformException {
-      userID = 'Failed to get user ID.';
-      debugPrint('Failed to get user ID.');
-    }
-
-    // If the widget was removed from the tree while the asynchronous platform
-    // message was in flight, we want to discard the reply rather than calling
-    // setState to update our non-existent appearance.
-    if (!mounted) return;
-
-    setState(() {
-      _userID = userID;
-    });
-  }
+  Future<void> initPlatformState() async {}
 
   @override
   Widget build(BuildContext context) {
@@ -58,7 +36,6 @@ class _MyAppState extends State<MyApp> {
             onPressed: () {
               PayfortPlugin.getID.then((value) => {
                     //use this call to get device id and send it to server
-                    debugPrint('user id is $value'),
                     PayfortPlugin.performPaymentRequest(
                             'YOR_MERCHANT_REF',
                             'YOUR_SDK_TOKEN',
@@ -70,7 +47,7 @@ class _MyAppState extends State<MyApp> {
                             'EGP')
                         .then((value) => {
                               debugPrint(
-                                  'card number is ${value['card_number']}')
+                                  'card number is ${value!['card_number']}')
                             })
                   });
             },
