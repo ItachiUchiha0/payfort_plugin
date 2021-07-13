@@ -63,13 +63,13 @@ class PayfortPlugin(): FlutterPlugin, MethodCallHandler,ActivityAware {
           }else{
             FortSdk.ENVIRONMENT.PRODUCTION
           }
-          Log.e("environment", "env $envoirenment _ $mode")
-
-          Log.e("native sdk token", token!!)
-          Log.e("native merchant", merchantRef!!)
+//          Log.e("environment", "env $envoirenment _ $mode")
+//
+//          Log.e("native sdk token", token!!)
+//          Log.e("native merchant", merchantRef!!)
           fortCallback = FortCallBackManager.Factory.create() as FortCallback
           deviceId = FortSdk.getDeviceId(activity)!!
-          Log.d("DeviceId", deviceId)
+         // Log.d("DeviceId", deviceId)
 
           val fortrequest = FortRequest()
           val requestMap: MutableMap<String, Any> = HashMap()

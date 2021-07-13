@@ -43,10 +43,10 @@ class _MyAppState extends State<MyApp> {
                             'ahmed',
                             'en',
                             'user@mail.com',
-                            "100",
+                            '100',
                             'PURCHASE',
                             'EGP',
-                            "0" //zero for test mode and one for production
+                            '0' //zero for test mode and one for production
                             )
                         .then((value) => {
                               debugPrint(

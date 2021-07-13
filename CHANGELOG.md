@@ -1,3 +1,15 @@
+## 0.2.0+5
+
+* code enhancement
+
+## 0.2.0+4
+
+* code enhancement
+
+## 0.2.0+3
+
+* code enhancement
+
 ## 0.2.0+2
 
 * fixing some issues

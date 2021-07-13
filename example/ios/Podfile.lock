@@ -1,6 +1,6 @@
 PODS:
   - Flutter (1.0.0)
-  - "payfort_plugin (0.2.0+2)":
+  - "payfort_plugin (0.2.0+5)":
     - Flutter
     - PayFortSDK (= 3.0.1)
   - PayFortSDK (3.0.1)
@@ -21,7 +21,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Flutter: 434fef37c0980e73bb6479ef766c45957d4b510c
-  payfort_plugin: 23af088b1a85bc15bcc0b3b78480d9456bbf6bec
+  payfort_plugin: 5e3e0dea47247f89e561a51d77a976113a407768
   PayFortSDK: d129aa07f62396d564ef086f141d740b4d4425fc
 
 PODFILE CHECKSUM: 3b96c78b7f4e28343b8c92158be87173d055636b

@@ -2,7 +2,7 @@ name: payfort_plugin
 description: >-
   PAYFORT integration became easy with flutter ,this plugin allows you to use payfort for both android and ios.
 
-version: 0.2.0+2
+version: 0.2.0+5
 repository: https://github.com/ItachiUchiha0/payfort_plugin
 environment:
   sdk: '>=2.12.0 <3.0.0'

@@ -33,11 +33,11 @@ public class SwiftPayfortPlugin: NSObject, FlutterPlugin {
         var payFort:PayFortController
         if mode == "0" {
              payFort = PayFortController.init(enviroment: .sandBox)
-            print("test")
+            //print("test")
 
         }else{
              payFort = PayFortController.init(enviroment: .production)
-            print("production")
+            //print("production")
 
         }
 
@@ -52,7 +52,7 @@ public class SwiftPayfortPlugin: NSObject, FlutterPlugin {
         request.setValue(token , forKey: "sdk_token")
         request.setValue(name, forKey: "customer_name")
 
-        print("amount ios"+amount!+currency!)
+        //print("amount ios"+amount!+currency!)
         payFort.isShowResponsePage = true
         payFort.callPayFort(withRequest: request as! [String : String], currentViewController: controller,
                             success: { (requestDic, responeDic) in

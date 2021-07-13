@@ -15,7 +15,8 @@ class PayfortPlugin {
   ///
   /// this method is for calling payfort sdk in both android and ios to perform payment process with
   /// specified parameters.
-  static Future<Map?> performPaymentRequest(String merchantRef,
+  static Future<Map?> performPaymentRequest(
+      String merchantRef,
       String sdkToken,
       String name,
       String language,
@@ -32,8 +33,8 @@ class PayfortPlugin {
       'lang': language,
       'command': command,
       'name': name,
-      "currency": currency
-      "mode": mode
+      'currency': currency,
+      'mode': mode
     });
     return result;
   }
