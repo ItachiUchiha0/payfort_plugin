@@ -20,7 +20,6 @@ public class SwiftPayfortPlugin: NSObject, FlutterPlugin {
             window = UIWindow.init(frame: frame)
         let controller : UIViewController =
         (UIApplication.shared.delegate?.window??.rootViewController)!;
-        let payFort = PayFortController.init(enviroment: .production)
         guard let args = call.arguments as? Dictionary<String, String> else { return }
         let token = args["sdkToken"]
         let merchantRef = args["merchantRef"]
@@ -29,15 +28,31 @@ public class SwiftPayfortPlugin: NSObject, FlutterPlugin {
         let command = args["command"]
         let amount = args["amount"]
         let email = args["email"]
+        let currency = args["currency"]
+        let mode = args["mode"]
+        var payFort:PayFortController
+        if mode == "0" {
+             payFort = PayFortController.init(enviroment: .sandBox)
+            print("test")
+
+        }else{
+             payFort = PayFortController.init(enviroment: .production)
+            print("production")
+
+        }
+
 
         let request: NSMutableDictionary = .init()
         request.setValue(amount, forKey: "amount")
         request.setValue(command, forKey: "command")
-        request.setValue("EGP", forKey: "currency")
+        request.setValue(currency, forKey: "currency")
         request.setValue(email, forKey: "customer_email")
         request.setValue(lang, forKey: "language")
         request.setValue(merchantRef, forKey: "merchant_reference")
         request.setValue(token , forKey: "sdk_token")
+        request.setValue(name, forKey: "customer_name")
+
+        print("amount ios"+amount!+currency!)
         payFort.isShowResponsePage = true
         payFort.callPayFort(withRequest: request as! [String : String], currentViewController: controller,
                             success: { (requestDic, responeDic) in

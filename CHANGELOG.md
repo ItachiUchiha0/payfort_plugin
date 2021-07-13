@@ -1,3 +1,11 @@
+## 0.2.0+2
+
+* fixing some issues
+
+## 0.2.0+1
+
+* Editing description
+
 ## 0.2.0
 
 * Supporting null safety and enable production payment

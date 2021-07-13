@@ -57,17 +57,28 @@ class PayfortPlugin(): FlutterPlugin, MethodCallHandler,ActivityAware {
           var amount = call.argument<String>("amount")
           var email = call.argument<String>("email")
           var currency = call.argument<String>("currency")!!
+          var mode = call.argument<String>("mode")!!
+          var envoirenment = if (mode == "0"){
+            FortSdk.ENVIRONMENT.TEST
+          }else{
+            FortSdk.ENVIRONMENT.PRODUCTION
+          }
+          Log.e("environment", "env $envoirenment _ $mode")
+
           Log.e("native sdk token", token!!)
           Log.e("native merchant", merchantRef!!)
           fortCallback = FortCallBackManager.Factory.create() as FortCallback
           deviceId = FortSdk.getDeviceId(activity)!!
           Log.d("DeviceId", deviceId)
+
           val fortrequest = FortRequest()
           val requestMap: MutableMap<String, Any> = HashMap()
           requestMap["command"] = command!!
           requestMap["customer_email"] = email!!
           requestMap["currency"] = currency
-          requestMap["amount"] = amount!!
+          requestMap["amount"] = 100
+          Log.d("amount", "am $amount $currency")
+
           requestMap["language"] = lang!!
           requestMap["merchant_reference"] = merchantRef.toString()
           requestMap["customer_name"] = name!!
@@ -75,7 +86,7 @@ class PayfortPlugin(): FlutterPlugin, MethodCallHandler,ActivityAware {
           fortrequest.requestMap = requestMap
           fortrequest.isShowResponsePage = true // to [display/use] the SDK response page
           try {
-            FortSdk.getInstance().registerCallback(activity, fortrequest, FortSdk.ENVIRONMENT.PRODUCTION, 5, fortCallback, true, object : FortInterfaces.OnTnxProcessed {
+            FortSdk.getInstance().registerCallback(activity, fortrequest, envoirenment, 5, fortCallback, true, object : FortInterfaces.OnTnxProcessed {
               override fun onCancel(requestParamsMap: Map<String, Any>, responseMap: Map<String, Any>) {
                 Log.d("Cancelled", responseMap.toString())
                 result.success(responseMap)

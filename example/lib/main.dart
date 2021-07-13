@@ -1,6 +1,7 @@
 import 'dart:async';
 
-import 'package:flutter/materialayfort_plugin.dart';
+import 'package:flutter/material.dart';
+import 'package:payfort_plugin/payfort_plugin.dart';
 
 void main() {
   runApp(MyApp());
@@ -42,9 +43,11 @@ class _MyAppState extends State<MyApp> {
                             'ahmed',
                             'en',
                             'user@mail.com',
-                            '1',
+                            "100",
                             'PURCHASE',
-                            'EGP')
+                            'EGP',
+                            "0" //zero for test mode and one for production
+                            )
                         .then((value) => {
                               debugPrint(
                                   'card number is ${value!['card_number']}')

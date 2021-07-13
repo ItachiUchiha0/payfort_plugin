@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'payfort_plugin'
-  s.version          = '0.1.8'
+  s.version          = '0.2.0+2'
   s.summary          = 'A new flutter plugin project.'
   s.description      = <<-DESC
 A new flutter plugin project.
